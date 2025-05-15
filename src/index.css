@@ -1,0 +1,166 @@
+/* styles/custom.css - Aggiungi questo file al tuo progetto */
+
+/* Stile globale per la tua app di videogiochi */
+:root {
+  --game-primary: #FFC107;    /* Giallo/Arancione per bottoni e accenti principali */
+  --game-dark: #121212;       /* Sfondo scuro quasi nero per un look da "gaming" */
+  --game-light: #f1f1f1;      /* Bianco sporco per i testi su sfondo scuro */
+  --game-card-hover: rgba(255, 193, 7, 0.15); /* Colore hover per le card */
+}
+
+body {
+  background-color: var(--game-dark);
+  color: var(--game-light);
+  font-family: 'Exo 2', 'Segoe UI', sans-serif; /* Font più moderno e "gaming" */
+}
+
+/* Game Hub Header con effetto neon */
+.game-hub h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(255, 193, 7, 0.7);
+}
+
+/* Search container con gradiente */
+.search-container {
+  background: linear-gradient(145deg, #1a1a1a, #2c2c2c);
+  border-bottom: 3px solid var(--game-primary);
+}
+
+/* Card di gioco con effetti hover */
+.game-card .card {
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.game-card .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  border-bottom: 3px solid var(--game-primary);
+}
+
+/* Icona categoria con effetto pulsante */
+.game-card .bi-controller {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Badge con effetto brillante */
+.badge {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Spinner animato per caricamento */
+.spinner-grow {
+  animation-duration: 1.2s;
+  box-shadow: 0 0 15px rgba(255, 193, 7, 0.5);
+}
+
+/* Effetto hover sui pulsanti */
+.btn {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Stile per l'header sticky */
+.game-header {
+  z-index: 1000; /* Assicura che l'header stia sopra tutti gli altri elementi */
+}
+
+.game-header .navbar {
+  transition: all 0.3s ease;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* Effetto quando scrolli */
+.scrolled .navbar {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: rgba(18, 18, 18, 0.95) !important;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Stile per il menu di navigazione */
+.navbar-nav .nav-link {
+  position: relative;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: var(--game-primary);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link:hover:after,
+.navbar-nav .nav-link.active:after {
+  width: 80%;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--game-primary) !important;
+}
+
+/* Stile per il footer */
+.game-footer a {
+  transition: all 0.3s ease;
+}
+
+.game-footer a:hover {
+  color: var(--game-primary) !important;
+  text-decoration: none;
+}
+
+.social-icons a {
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--game-primary) !important;
+  transform: translateY(-3px);
+}
+
+/* Media query per dispositivi mobili */
+@media (max-width: 768px) {
+  .game-card .card:hover {
+    transform: translateY(-4px);
+  }
+}
+
+/* Aggiungi uno script per gestire l'effetto di scroll dell'header */
+/* Aggiungi questo script nel tuo file JavaScript principale o crea un file separato */
+/*
+document.addEventListener('DOMContentLoaded', function() {
+  const header = document.querySelector('.game-header');
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+});
+*/  
