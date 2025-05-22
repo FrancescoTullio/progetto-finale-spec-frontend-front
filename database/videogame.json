@@ -1,0 +1,292 @@
+[
+  {
+    "title": "Elden Ring",
+    "category": "Action RPG",
+    "price": 59.99,
+    "platform": [
+      "PC",
+      "PS5",
+      "Xbox Series X"
+    ],
+    "multiplayer": true,
+    "year": "2022",
+    "company": "FromSoftware",
+    "vote": 10,
+    "img": "https://p325k7wa.twic.pics/high/elden-ring/elden-ring/03-news/ER-SOTE-announcement.jpg?twic=v1/cover=500x556/step=10/quality=80",
+    "pegi": "16",
+    "id": 1,
+    "createdAt": "2025-05-13T09:04:27.398Z",
+    "updatedAt": "2025-05-13T09:19:50.309Z"
+  },
+  {
+    "title": "The Legend of Zelda: Breath of the Wild",
+    "category": "Adventure",
+    "price": 49.99,
+    "platform": [
+      "Nintendo Switch"
+    ],
+    "multiplayer": false,
+    "year": "2017",
+    "company": "Nintendo",
+    "vote": 9.8,
+    "img": "https://static.posters.cz/image/1300/stampa-su-tela-the-legend-of-zelda-breath-of-the-wild-sunset-i111061.jpg",
+    "pegi": "12",
+    "id": 2,
+    "createdAt": "2025-05-13T09:05:34.477Z",
+    "updatedAt": "2025-05-13T09:05:34.477Z"
+  },
+  {
+    "title": "Call of Duty: Modern Warfare II",
+    "category": "FPS",
+    "price": 69.99,
+    "platform": [
+      "PC",
+      "PS5",
+      "Xbox Series X"
+    ],
+    "multiplayer": true,
+    "year": "2022",
+    "company": "Activision",
+    "vote": 8.2,
+    "img": "https://m.media-amazon.com/images/M/MV5BYmM2MzY2NGEtOGNhNS00MzM1LTg3MGEtZTRkYjBkNzdjYzk5XkEyXkFqcGc@._V1_.jpg",
+    "pegi": "18",
+    "id": 3,
+    "createdAt": "2025-05-13T09:05:44.744Z",
+    "updatedAt": "2025-05-13T09:05:44.744Z"
+  },
+  {
+    "title": "Stardew Valley",
+    "category": "Simulation",
+    "price": 14.99,
+    "platform": [
+      "PC",
+      "PS4",
+      "Xbox One",
+      "Nintendo Switch",
+      "Mobile"
+    ],
+    "multiplayer": true,
+    "year": "2016",
+    "company": "ConcernedApe",
+    "vote": 9.1,
+    "img": "https://gaming-cdn.com/images/products/1767/orig/stardew-valley-pc-mac-gioco-steam-cover.jpg?v=1704800467",
+    "pegi": "7",
+    "id": 4,
+    "createdAt": "2025-05-13T09:05:54.862Z",
+    "updatedAt": "2025-05-13T09:05:54.862Z"
+  },
+  {
+    "title": "God of War Ragnarök",
+    "category": "Action",
+    "price": 69.99,
+    "platform": [
+      "PS5",
+      "PS4"
+    ],
+    "multiplayer": false,
+    "year": "2022",
+    "company": "Santa Monica Studio",
+    "vote": 9.6,
+    "img": "https://gaming-cdn.com/images/products/16970/orig/god-of-war-ragnarok-digital-deluxe-edition-digital-deluxe-edition-pc-gioco-steam-europe-cover.jpg?v=1729767551",
+    "pegi": "18",
+    "id": 5,
+    "createdAt": "2025-05-13T09:06:05.028Z",
+    "updatedAt": "2025-05-13T09:06:05.028Z"
+  },
+  {
+    "title": "Hollow Knight",
+    "category": "Metroidvania",
+    "price": 14.99,
+    "platform": [
+      "PC",
+      "PS4",
+      "Xbox One",
+      "Nintendo Switch"
+    ],
+    "multiplayer": false,
+    "year": "2017",
+    "company": "Team Cherry",
+    "vote": 9.4,
+    "img": "https://static-it.gamestop.it/images/products/294646/3max.jpg",
+    "pegi": "7",
+    "id": 6,
+    "createdAt": "2025-05-22T08:12:00.630Z",
+    "updatedAt": "2025-05-22T08:12:00.630Z"
+  },
+  {
+    "title": "Hades",
+    "category": "Roguelike",
+    "price": 24.99,
+    "platform": [
+      "PC",
+      "PS4",
+      "PS5",
+      "Xbox One",
+      "Xbox Series X",
+      "Nintendo Switch"
+    ],
+    "multiplayer": false,
+    "year": "2020",
+    "company": "Supergiant Games",
+    "vote": 9.3,
+    "img": "https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_download_software_1/H2x1_NSwitchDS_Hades_image1600w.png",
+    "pegi": "12",
+    "id": 7,
+    "createdAt": "2025-05-22T08:12:32.535Z",
+    "updatedAt": "2025-05-22T08:12:32.535Z"
+  },
+  {
+    "title": "Cyberpunk 2077",
+    "category": "RPG",
+    "price": 59.99,
+    "platform": [
+      "PC",
+      "PS4",
+      "PS5",
+      "Xbox One",
+      "Xbox Series X"
+    ],
+    "multiplayer": false,
+    "year": "2020",
+    "company": "CD Projekt",
+    "vote": 8.5,
+    "img": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Cyberpunk_2077_box_art.jpg/250px-Cyberpunk_2077_box_art.jpg",
+    "pegi": "18",
+    "id": 8,
+    "createdAt": "2025-05-22T08:12:48.641Z",
+    "updatedAt": "2025-05-22T08:12:48.641Z"
+  },
+  {
+    "title": "Minecraft",
+    "category": "Sandbox",
+    "price": 26.95,
+    "platform": [
+      "PC",
+      "PS4",
+      "Xbox One",
+      "Nintendo Switch",
+      "Mobile"
+    ],
+    "multiplayer": true,
+    "year": "2011",
+    "company": "Mojang Studios",
+    "vote": 9.2,
+    "img": "https://image.api.playstation.com/vulcan/ap/rnd/202407/0401/670c294ded3baf4fa11068db2ec6758c63f7daeb266a35a1.png",
+    "pegi": "7",
+    "id": 9,
+    "createdAt": "2025-05-22T08:13:00.695Z",
+    "updatedAt": "2025-05-22T08:13:00.695Z"
+  },
+  {
+    "title": "The Witcher 3: Wild Hunt",
+    "category": "RPG",
+    "price": 39.99,
+    "platform": [
+      "PC",
+      "PS4",
+      "PS5",
+      "Xbox One",
+      "Nintendo Switch"
+    ],
+    "multiplayer": false,
+    "year": "2015",
+    "company": "CD Projekt",
+    "vote": 9.8,
+    "img": "https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_TheWitcher3WildHuntCompleteEdition_enGB_image1600w.jpg",
+    "pegi": "18",
+    "id": 10,
+    "createdAt": "2025-05-22T08:13:11.219Z",
+    "updatedAt": "2025-05-22T08:13:11.219Z"
+  },
+  {
+    "title": "Super Mario Odyssey",
+    "category": "Platform",
+    "price": 49.99,
+    "platform": [
+      "Nintendo Switch"
+    ],
+    "multiplayer": false,
+    "year": "2017",
+    "company": "Nintendo",
+    "vote": 9.6,
+    "img": "https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_SuperMarioOdyssey_image1600w.jpg",
+    "pegi": "7",
+    "id": 11,
+    "createdAt": "2025-05-22T08:13:22.264Z",
+    "updatedAt": "2025-05-22T08:13:22.264Z"
+  },
+  {
+    "title": "Baldur's Gate 3",
+    "category": "RPG",
+    "price": 69.99,
+    "platform": [
+      "PC",
+      "PS5",
+      "Xbox Series X"
+    ],
+    "multiplayer": true,
+    "year": "2023",
+    "company": "Larian Studios",
+    "vote": 9.9,
+    "img": "https://store-images.s-microsoft.com/image/apps.11593.13550459053619040.9c555c73-a698-4992-b0f3-c5084cf18b5e.82a9ea41-c628-4d02-8a0f-d0304eba31c7",
+    "pegi": "18",
+    "id": 12,
+    "createdAt": "2025-05-22T08:13:30.950Z",
+    "updatedAt": "2025-05-22T08:13:30.950Z"
+  },
+  {
+    "title": "Resident Evil 4 Remake",
+    "category": "Survival Horror",
+    "price": 59.99,
+    "platform": [
+      "PC",
+      "PS4",
+      "PS5",
+      "Xbox Series X"
+    ],
+    "multiplayer": false,
+    "year": "2023",
+    "company": "Capcom",
+    "vote": 9,
+    "img": "https://image.api.playstation.com/vulcan/ap/rnd/202207/2509/85p2Dwh5iDhUzRKe40QeNYh3.png",
+    "pegi": "18",
+    "id": 13,
+    "createdAt": "2025-05-22T08:13:41.558Z",
+    "updatedAt": "2025-05-22T08:13:41.558Z"
+  },
+  {
+    "title": "Marvel's Spider-Man",
+    "category": "Action Adventure",
+    "price": 49.99,
+    "platform": [
+      "PS4",
+      "PS5"
+    ],
+    "multiplayer": false,
+    "year": "2018",
+    "company": "Insomniac Games",
+    "vote": 9.4,
+    "img": "https://image.api.playstation.com/vulcan/ap/rnd/202011/0402/C784xeOFo2wViCf4m5bxgoeH.png",
+    "pegi": "16",
+    "id": 14,
+    "createdAt": "2025-05-22T08:15:19.163Z",
+    "updatedAt": "2025-05-22T08:15:19.163Z"
+  },
+  {
+    "title": "World of Warcraft",
+    "category": "MMORPG",
+    "price": 0,
+    "platform": [
+      "PC"
+    ],
+    "multiplayer": true,
+    "year": "2004",
+    "company": "Blizzard Entertainment",
+    "vote": 9,
+    "img": "https://www.nextplayer.it/wp-content/uploads/2025/01/black-myth-wu-kong_1_jpg_1600x900_crop_q85-49.jpg",
+    "pegi": "12",
+    "id": 15,
+    "createdAt": "2025-05-22T08:16:37.080Z",
+    "updatedAt": "2025-05-22T08:16:37.080Z"
+  }
+]
