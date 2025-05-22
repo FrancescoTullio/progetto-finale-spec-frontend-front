@@ -1,5 +1,5 @@
 {
-  "name": "progetto-finale-spec-frontend-front",
+  "name": "secondo-progetto-finale",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.6",
-    "bootstrapp": "^0.0.0",
+    "bootstrap-icons": "^1.13.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.6.0"

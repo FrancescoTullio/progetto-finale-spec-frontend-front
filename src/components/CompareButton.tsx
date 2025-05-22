@@ -1,50 +1,63 @@
-import { TypeVideogameLong } from "../types/Type";
+import { useState } from 'react';
+import { useCompare } from '../Contex/CompareContext';
+import { CompareButtonProps } from '../Type/Type';
 
-type CompareButtonProps = {
-  game: TypeVideogameLong;
-  selectedGames: TypeVideogameLong[];
-  onSelectForCompare: (game: TypeVideogameLong) => void;
-  onUnselectForCompare: (gameId: number) => void;
-};
+export default function CompareButton({ game, variant = 'card' }: CompareButtonProps) {
+  const { addToCompare, removeFromCompare, isInCompare, canAddMore } = useCompare();
+  const [showTooltip, setShowTooltip] = useState(false);
+  
+  const inCompare = isInCompare(game.id);
+  const canAdd = canAddMore() || inCompare;
 
-export default function CompareButton({ 
-  game, 
-  selectedGames, 
-  onSelectForCompare, 
-  onUnselectForCompare 
-}: CompareButtonProps) {
-  // Verifica se il gioco è già selezionato per il confronto
-  const isSelected = selectedGames.some(selectedGame => selectedGame.id === game.id);
-  
-  // Verifica se possiamo selezionare altri giochi (max 2)
-  const canSelect = selectedGames.length < 2 || isSelected;
-  
   const handleClick = () => {
-    if (isSelected) {
-      onUnselectForCompare(game.id);
-    } else if (canSelect) {
-      onSelectForCompare(game);
+    if (inCompare) {
+      removeFromCompare(game.id);
+    } else if (canAdd) {
+      addToCompare(game);
+    } else {
+      // Mostra tooltip di avviso se non si possono aggiungere altri giochi
+      setShowTooltip(true);
+      setTimeout(() => setShowTooltip(false), 3000);
     }
   };
-  
+
+  if (variant === 'detail') {
+    return (
+      <div className="position-relative">
+        <button 
+          className={`btn ${inCompare ? 'btn-info' : 'btn-outline-info'}`}
+          onClick={handleClick}
+          disabled={!canAdd && !inCompare}
+        >
+          📊
+          {inCompare ? 'Rimuovi dal confronto' : 'Aggiungi al confronto'}
+        </button>
+        
+        {showTooltip && (
+          <div className="position-absolute top-100 start-0 mt-2 p-2 bg-dark text-white rounded shadow" style={{ zIndex: 1050, fontSize: '0.85rem', width: 'max-content' }}>
+            Puoi confrontare solo 2 giochi. Rimuovi un gioco prima di aggiungerne un altro.
+          </div>
+        )}
+      </div>
+    );
+  }
+
   return (
-    <button 
-      className={`btn btn-sm ${isSelected ? 'btn-success' : 'btn-outline-warning'} compare-btn`}
-      onClick={handleClick}
-      disabled={!canSelect && !isSelected}
-      aria-label={isSelected ? 'Rimuovi dal confronto' : 'Aggiungi al confronto'}
-    >
-      {isSelected ? (
-        <>
-          <i className="bi bi-check-circle me-1"></i>
-          Selezionato
-        </>
-      ) : (
-        <>
-          <i className="bi bi-arrow-left-right me-1"></i>
-          Confronta
-        </>
+    <div className="position-relative">
+      <button 
+        onClick={handleClick}
+        className={`btn btn-sm ${inCompare ? 'btn-info' : 'btn-outline-info'}`}
+        disabled={!canAdd && !inCompare}
+        title={inCompare ? "Rimuovi dal confronto" : "Aggiungi al confronto"}
+      >
+        📊
+      </button>
+      
+      {showTooltip && (
+        <div className="position-absolute top-100 start-50 translate-middle-x mt-2 p-2 bg-dark text-white rounded shadow" style={{ zIndex: 1050, fontSize: '0.75rem', width: 'max-content' }}>
+          Limite di 2 giochi raggiunto
+        </div>
       )}
-    </button>
+    </div>
   );
 }

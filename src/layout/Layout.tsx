@@ -1,15 +1,27 @@
 import { Outlet } from "react-router-dom";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../Components/Header";
+import Footer from "../Components/Footer";
+import FavoritesBar from "../Components/FavoritesBar";
+import CompareView from "../Components/CompareView";
+import { FavoritesProvider } from "../Contex/FavoritesContext";
+import { CompareProvider } from "../Contex/CompareContext";
 
 export default function Layout() {
-  return (
-    <div className="game-layout bg-dark text-light min-vh-100 d-flex flex-column">
-      <Header />
-      <main className="flex-grow-1 py-4">
-        <Outlet />
-      </main>
-      <Footer />
-    </div>
-  );
+    return (
+        <FavoritesProvider>
+            <CompareProvider>
+                <div className="d-flex flex-column min-vh-100">
+                    <Header />                    
+                    <FavoritesBar />
+                    <main className="flex-grow-1">
+                        <div className="container py-4">
+                            <CompareView />
+                            <Outlet />
+                        </div>
+                    </main>
+                    <Footer />
+                </div>
+            </CompareProvider>
+        </FavoritesProvider>
+    );
 }
