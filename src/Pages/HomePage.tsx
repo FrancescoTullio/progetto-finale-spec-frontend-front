@@ -15,7 +15,6 @@ export default function HomePage() {
 
     return (
         <>
-            <h1>questa è la home</h1>
             <div className="row mb-4">
                 <div className="col-md-4 mb-3">
                     <label htmlFor="searchInput" className="form-label">Cerca per titolo</label>
